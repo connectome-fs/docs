@@ -1,0 +1,19 @@
+= Nav typology icons + expand fix
+:description: Wired Diátaxis nav icons and fixed double site.js breaking expand/collapse.
+:page-audience: Visitors and maintainers tracking hub changes
+:page-usage-context: Changelog detail
+:page-orig-author: Cursor agent on behalf of Ryan Johnson
+:page-last-author: Cursor agent on behalf of Ryan Johnson
+:page-last-edited: 2026-09-09
+
+ifndef::page-context-active[]
+Audience:: {page-audience}
+Usage context:: {page-usage-context}
+Original author:: {page-orig-author}
+Last author:: {page-last-author}
+Last updated:: {page-last-edited}
+endif::[]
+
+Wired `@antora-supplemental/nav-typology` and `nav-typology-diataxis` (same stack as docs.devcentr.org) so Diátaxis / changelog sidebar rows get uniform SVG icons.
+
+Also fixed broken nav expand/collapse: supplemental `footer-content.hbs` was loading `site.js` again after Valentus `footer-scripts` already did, which registered toggle handlers twice so chevrons appeared dead. Removed the duplicate script tag.

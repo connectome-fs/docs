@@ -1,5 +1,12 @@
 = Changelog
 
+== 2026-09-09 — Nav typology icons + expand fix
+
+xref:changelog-details/2026-09-09 - nav typology and expand fix.adoc[Details]
+
+* Enabled `@antora-supplemental/nav-typology` + `nav-typology-diataxis` with companion supplemental UI
+* Fixed sidebar expand/collapse by stopping a duplicate `site.js` load in `footer-content.hbs`
+
 == 2026-09-09 — Dedicated Antora hub
 
 xref:changelog-details/2026-09-09 - dedicated antora hub.adoc[Details]

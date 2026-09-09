@@ -1,0 +1,5 @@
+= 2026-09-09 — Nav typology icons + expand fix
+
+Wired `@antora-supplemental/nav-typology` and `nav-typology-diataxis` (same stack as docs.devcentr.org) so Diátaxis / changelog sidebar rows get uniform SVG icons.
+
+Also fixed broken nav expand/collapse: supplemental `footer-content.hbs` was loading `site.js` again after Valentus `footer-scripts` already did, which registered toggle handlers twice so chevrons appeared dead. Removed the duplicate script tag.

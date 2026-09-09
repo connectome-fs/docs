@@ -10,6 +10,7 @@ site:
     header_doc_title: connectome-fs Docs
     site_nav_tree_include: home,connectome-fs
     site_nav_tree_order: home,connectome-fs
+    nav_typology_diataxis: 'true'
 
 urls:
   html_extension_style: indexify
@@ -28,6 +29,8 @@ antora:
       order:
         - home
         - connectome-fs
+    - require: '@antora-supplemental/nav-typology'
+    - require: '@antora-supplemental/nav-typology-diataxis'
     - require: '@antora-supplemental/unversioned-component-urls'
       mode: alias
     - '@antora-supplemental/build-stack'
