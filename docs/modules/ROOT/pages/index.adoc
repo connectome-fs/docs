@@ -1,0 +1,31 @@
+= connectome-fs documentation hub
+:description: Organization docs portal for connectome-fs.
+:page-audience: Visitors evaluating or learning connectome-fs
+:page-usage-context: Public documentation hub home
+:page-orig-author: Ryan Johnson
+:page-last-author: Cursor agent on behalf of Ryan Johnson
+:page-last-edited: 2026-09-09
+
+ifndef::page-context-active[]
+Audience:: {page-audience}
+Usage context:: {page-usage-context}
+Original author:: {page-orig-author}
+Last author:: {page-last-author}
+Last updated:: {page-last-edited}
+endif::[]
+
+Welcome to the connectome-fs documentation hub.
+Product teaching and reference live in the **connectome-fs** component; this portal orients you and tracks hub changes.
+
+== Start here
+
+* xref:connectome-fs::index.adoc[connectome-fs overview]
+* xref:connectome-fs:explanation:model.adoc[Connectome model]
+* xref:connectome-fs:explanation:navigating-by-content.adoc[Labels versus wires]
+* xref:connectome-fs:reference:query.adoc[Query grammar]
+
+== Hub notes
+
+* xref:where-docs-live.adoc[Where docs live]
+* xref:changelog.adoc[Hub changelog]
+* link:https://connectome-fs.github.io/[Organization website]

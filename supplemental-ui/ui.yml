@@ -1,0 +1,4 @@
+# Publish robots.txt to site root for crawlability.
+# See https://docs.antora.org/antora/latest/playbook/ui-supplemental-files/#static-files
+static_files:
+  - robots.txt

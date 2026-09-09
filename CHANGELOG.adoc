@@ -1,0 +1,10 @@
+= Changelog
+
+== 2026-09-09 — Dedicated Antora hub
+
+xref:changelog-details/2026-09-09 - dedicated antora hub.adoc[Details]
+
+* Moved the org Antora playbook and supplemental UI out of the website repo
+* Restored Valentus layered styles in supplemental head-meta (styles were missing because brand CSS alone replaced the theme partial)
+* Publishes the single public docs site at `https://connectome-fs.github.io/docs/`
+* Aggregates the product component from `connectome-fs` while keeping a `home` portal here

@@ -1,0 +1,4 @@
+﻿Canonical brand source: connectome-fs/.github profile/assets/brand/neuronal-2026-09/
+Copied logo-mark.svg (un-backgrounded / no field tile) into supplemental-ui/img/logo.svg for Valentus header_logo.
+Matches connectome-fs.github.io site chrome preference — transparent mark, not the plate-backed logo.svg.
+Do not invent a second brand palette or mark here.

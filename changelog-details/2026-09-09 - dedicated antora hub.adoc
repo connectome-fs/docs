@@ -1,0 +1,13 @@
+= Dedicated Antora hub
+:description: Split the org docs aggregator into connectome-fs/docs.
+
+The organization website previously built Antora into `public/docs/` and published it from `connectome-fs.github.io`.
+That mixed marketing and documentation ownership.
+
+This repository is now the sole public Antora hub:
+
+* Playbook + Valentus/Facto supplemental UI live here
+* Supplemental `head-meta.hbs` re-includes the full Valentus CSS/FOUC chain (brand overlay alone had been replacing it)
+* Product AsciiDoc stays in `connectome-fs/docs/`
+* GitHub Pages for this repo owns `https://connectome-fs.github.io/docs/`
+* The website only links to that URL

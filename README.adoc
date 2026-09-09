@@ -1,0 +1,51 @@
+ifndef::env-github[:icons: font]
+:toc: preamble
+:toclevels: 2
+
+ifdef::env-github[]
+++++
+<a id="readme-top"></a>
+<div align="center">
+<a href="https://github.com/connectome-fs/docs/graphs/contributors"><img src="https://img.shields.io/github/contributors/connectome-fs/docs.svg?style=for-the-badge" alt="Contributors"></a>
+<a href="https://github.com/connectome-fs/docs/issues"><img src="https://img.shields.io/github/issues/connectome-fs/docs.svg?style=for-the-badge" alt="Issues"></a>
+<a href="https://github.com/connectome-fs/docs/blob/main/LICENSE"><img src="https://img.shields.io/github/license/connectome-fs/docs.svg?style=for-the-badge" alt="License"></a>
+<br />
+<h3 align="center">connectome-fs Docs</h3>
+<p align="center">
+Organization Antora hub for connectome-fs.<br />
+<a href="https://connectome-fs.github.io/docs/"><strong>Explore the docs »</strong></a><br />
+<a href="https://connectome-fs.github.io/">Website</a>
+·
+<a href="https://github.com/connectome-fs/connectome-fs">Core repository</a>
+</p>
+</div>
+++++
+endif::[]
+
+ifndef::env-github[]
+= connectome-fs Docs
+
+Organization Antora hub for connectome-fs.
+
+link:https://connectome-fs.github.io/docs/[Explore the docs] ·
+link:https://connectome-fs.github.io/[Website] ·
+link:https://github.com/connectome-fs/connectome-fs[Core repository]
+endif::[]
+
+== About
+
+This repository owns the playbook, supplemental UI, search, and GitHub Pages deployment for the org docs hub.
+Product documentation source remains beside the code in `connectome-fs` under `docs/`.
+
+== Development
+
+* Production fetch: `pnpm build`
+* Local sibling checkouts: `pnpm build:local`
+
+== Changelog
+
+See link:CHANGELOG.adoc[CHANGELOG.adoc] and link:changelog-details/[changelog-details/].
+
+== License
+
+See link:LICENSE[LICENSE].

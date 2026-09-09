@@ -1,0 +1,166 @@
+/*
+ * connectome-fs brand overlay for valentus-theme 2.x (Signal Field tokens).
+ * Light signal: #0c6b6e · Dark signal: #3ec9c4 · Copper: #b86a3d / #e09a62
+ */
+
+:root {
+  --adt-accent: #0c6b6e;
+  --adt-accent-hover: #085456;
+  --adt-accent-soft: rgba(12, 107, 110, 0.12);
+  --cfs-doc-background: #f7f9fb;
+  --cfs-doc-surface: #ffffff;
+  --cfs-doc-text: #17232b;
+  --cfs-doc-muted: #5b6973;
+  --cfs-doc-border: #d7e0e5;
+  --themed-svg-connectome-labels-wires-color-canvas: transparent;
+  --themed-svg-connectome-labels-wires-color-identity-surface: #0c6b6e;
+  --themed-svg-connectome-labels-wires-color-identity-border: #145a5c;
+  --themed-svg-connectome-labels-wires-color-identity-text: #ffffff;
+  --themed-svg-connectome-labels-wires-color-label-surface: #f4f7f8;
+  --themed-svg-connectome-labels-wires-color-label-border: #d4568c;
+  --themed-svg-connectome-labels-wires-color-label-text: #142029;
+  --themed-svg-connectome-labels-wires-color-relation-surface: #e9eef2;
+  --themed-svg-connectome-labels-wires-color-relation-border: #0c6b6e;
+  --themed-svg-connectome-labels-wires-color-relation-text: #142029;
+  --themed-svg-connectome-labels-wires-color-pointer: #d4568c;
+  --themed-svg-connectome-labels-wires-color-edge: #0c6b6e;
+  --themed-svg-connectome-identity-lenses-color-canvas: transparent;
+  --themed-svg-connectome-identity-lenses-color-identity-surface: #0c6b6e;
+  --themed-svg-connectome-identity-lenses-color-identity-border: #145a5c;
+  --themed-svg-connectome-identity-lenses-color-identity-text: #ffffff;
+  --themed-svg-connectome-identity-lenses-color-lens-surface: #f4f7f8;
+  --themed-svg-connectome-identity-lenses-color-lens-border: #d4568c;
+  --themed-svg-connectome-identity-lenses-color-lens-text: #142029;
+  --themed-svg-connectome-identity-lenses-color-snapshot-surface: #e9eef2;
+  --themed-svg-connectome-identity-lenses-color-snapshot-border: #0c6b6e;
+  --themed-svg-connectome-identity-lenses-color-snapshot-text: #142029;
+  --themed-svg-connectome-identity-lenses-color-adapter-surface: #f4f7f8;
+  --themed-svg-connectome-identity-lenses-color-adapter-border: #b86a3d;
+  --themed-svg-connectome-identity-lenses-color-adapter-text: #142029;
+  --themed-svg-connectome-identity-lenses-color-edge: #0c6b6e;
+}
+
+html.dark-theme {
+  --adt-accent: #3ec9c4;
+  --adt-accent-hover: #7adcd8;
+  --adt-accent-soft: rgba(62, 201, 196, 0.14);
+  --cfs-doc-background: #0d151a;
+  --cfs-doc-surface: #141f25;
+  --cfs-doc-text: #edf4f6;
+  --cfs-doc-muted: #a6b5bd;
+  --cfs-doc-border: #2a3a42;
+  --themed-svg-connectome-labels-wires-color-canvas: transparent;
+  --themed-svg-connectome-labels-wires-color-identity-surface: #3ec9c4;
+  --themed-svg-connectome-labels-wires-color-identity-border: #7adcd8;
+  --themed-svg-connectome-labels-wires-color-identity-text: #071718;
+  --themed-svg-connectome-labels-wires-color-label-surface: #17262d;
+  --themed-svg-connectome-labels-wires-color-label-border: #f083b4;
+  --themed-svg-connectome-labels-wires-color-label-text: #f4f7f8;
+  --themed-svg-connectome-labels-wires-color-relation-surface: #121a22;
+  --themed-svg-connectome-labels-wires-color-relation-border: #3ec9c4;
+  --themed-svg-connectome-labels-wires-color-relation-text: #e6eef2;
+  --themed-svg-connectome-labels-wires-color-pointer: #f083b4;
+  --themed-svg-connectome-labels-wires-color-edge: #3ec9c4;
+  --themed-svg-connectome-identity-lenses-color-identity-surface: #3ec9c4;
+  --themed-svg-connectome-identity-lenses-color-identity-border: #7adcd8;
+  --themed-svg-connectome-identity-lenses-color-identity-text: #071718;
+  --themed-svg-connectome-identity-lenses-color-lens-surface: #17262d;
+  --themed-svg-connectome-identity-lenses-color-lens-border: #f078a8;
+  --themed-svg-connectome-identity-lenses-color-lens-text: #f4f7f8;
+  --themed-svg-connectome-identity-lenses-color-snapshot-surface: #121a22;
+  --themed-svg-connectome-identity-lenses-color-snapshot-border: #3ec9c4;
+  --themed-svg-connectome-identity-lenses-color-snapshot-text: #e6eef2;
+  --themed-svg-connectome-identity-lenses-color-adapter-surface: #17262d;
+  --themed-svg-connectome-identity-lenses-color-adapter-border: #e09a62;
+  --themed-svg-connectome-identity-lenses-color-adapter-text: #f4f7f8;
+  --themed-svg-connectome-identity-lenses-color-edge: #3ec9c4;
+}
+
+body {
+  background:
+    radial-gradient(900px 420px at 0% 0%, color-mix(in oklab, var(--adt-accent) 10%, transparent), transparent 55%),
+    var(--cfs-doc-background);
+  color: var(--cfs-doc-text);
+  font-family: var(--adt-font-body);
+}
+
+button,
+input,
+select,
+textarea,
+.doc h1,
+.doc h2,
+.doc h3,
+.doc h4,
+.doc h5,
+.doc h6 {
+  font-family: var(--adt-font-body);
+}
+
+html.dark-theme .body,
+html.dark-theme .breadcrumbs,
+html.dark-theme .doc,
+html.dark-theme .doc h1,
+html.dark-theme .doc h2,
+html.dark-theme .doc h3,
+html.dark-theme .doc h4,
+html.dark-theme .doc h5,
+html.dark-theme .doc h6 {
+  color: var(--cfs-doc-text);
+}
+
+html.dark-theme .doc a,
+html.dark-theme .breadcrumbs a,
+html.dark-theme .toc-menu a {
+  color: var(--adt-accent);
+}
+
+html.dark-theme .nav-container,
+html.dark-theme .nav,
+html.dark-theme .toc-menu,
+html.dark-theme .doc pre,
+html.dark-theme .doc table {
+  background-color: var(--cfs-doc-surface);
+  color: var(--cfs-doc-text);
+}
+
+html.dark-theme .doc code,
+html.dark-theme .doc .listingblock,
+html.dark-theme .doc .literalblock,
+html.dark-theme .toc-menu {
+  color: var(--cfs-doc-muted);
+}
+
+html.dark-theme .nav-menu a {
+  color: var(--cfs-doc-muted);
+}
+
+html.dark-theme .nav-menu .is-current-page > a,
+html.dark-theme .nav-menu a:hover {
+  color: var(--adt-accent);
+}
+
+html.dark-theme .doc .listingblock pre:not(.highlight),
+html.dark-theme .doc .literalblock pre,
+html.dark-theme .doc pre.highlight > code,
+html.dark-theme .doc code {
+  background-color: var(--cfs-doc-surface);
+  color: var(--cfs-doc-text);
+}
+
+html.dark-theme .doc hr,
+html.dark-theme .doc table,
+html.dark-theme .nav-container,
+html.dark-theme .toc-menu {
+  border-color: var(--cfs-doc-border);
+}
+
+.imageblock.themed-svg themed-svg {
+  display: block;
+  width: 100%;
+}
+
+.imageblock.themed-svg img {
+  width: 100%;
+  height: auto;
+}

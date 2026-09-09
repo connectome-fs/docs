@@ -1,0 +1,23 @@
+= Where docs live
+:description: How connectome-fs separates product docs from the Antora hub.
+:page-audience: Maintainers and contributors wiring documentation
+:page-usage-context: Hub orientation
+:page-orig-author: Ryan Johnson
+:page-last-author: Cursor agent on behalf of Ryan Johnson
+:page-last-edited: 2026-09-09
+
+ifndef::page-context-active[]
+Audience:: {page-audience}
+Usage context:: {page-usage-context}
+Original author:: {page-orig-author}
+Last author:: {page-last-author}
+Last updated:: {page-last-edited}
+endif::[]
+
+== Topology
+
+* **Product component source** — `connectome-fs` repository, `docs/` + `docs/antora.yml`
+* **Docs hub** — this `docs` repository: playbook, supplemental UI, home portal, Pages deploy
+* **Website** — `connectome-fs.github.io` marketing/news/blog only; links to `/docs/`
+
+Do not publish a second public Antora site from the product or website repositories.

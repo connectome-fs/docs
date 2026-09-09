@@ -1,0 +1,71 @@
+name: Docs
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+  repository_dispatch:
+    types: [docs-rebuild]
+  schedule:
+    # Fetch product-component updates without a cross-repo token
+    - cron: '0 */6 * * *'
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages-docs
+  cancel-in-progress: true
+
+jobs:
+  build:
+    name: Build Antora docs
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: pnpm/action-setup@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: pnpm
+
+      - name: Install dependencies
+        run: pnpm install --frozen-lockfile
+
+      - name: Build Antora site
+        run: pnpm build
+
+      - name: Verify crawlable output
+        shell: bash
+        run: |
+          test -s build/site/index.html
+          test -s build/site/sitemap.xml
+          test -d build/site/connectome-fs
+          grep -q '<title>' build/site/index.html
+          grep -q 'connectome-fs' build/site/index.html
+          grep -q 'https://connectome-fs.github.io/docs' build/site/sitemap.xml
+          grep -q 'rel="canonical"' build/site/index.html
+          ! grep -RFq 'https://connectome-fs.github.io/connectome-fs/' build/site
+          touch build/site/.nojekyll
+
+      - uses: actions/configure-pages@v5
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: build/site
+
+  deploy:
+    if: github.ref == 'refs/heads/main' && github.event_name != 'pull_request'
+    name: Deploy to GitHub Pages
+    runs-on: ubuntu-latest
+    needs: build
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4

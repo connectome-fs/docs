@@ -1,0 +1,67 @@
+# Local sibling checkouts under CODE_ROOT/github.com/connectome-fs/
+site:
+  title: connectome-fs Docs (local)
+  url: https://connectome-fs.github.io/docs
+  start_page: home::index.adoc
+  keys:
+    header_logo: logo.svg
+    site_home_url: https://connectome-fs.github.io/
+    site_home_label: connectome-fs home
+    header_doc_title: connectome-fs Docs
+    site_nav_tree_include: home,connectome-fs
+    site_nav_tree_order: home,connectome-fs
+
+urls:
+  html_extension_style: indexify
+
+antora:
+  extensions:
+    - require: '@antora/lunr-extension'
+      index_latest_only: true
+      index_by_heading: true
+      snippet_length: 200
+    - require: '@antora-supplemental/antora-search-chat'
+    - require: '@antora-supplemental/site-nav-tree'
+      include:
+        - home
+        - connectome-fs
+      order:
+        - home
+        - connectome-fs
+    - require: '@antora-supplemental/unversioned-component-urls'
+      mode: alias
+    - '@antora-supplemental/build-stack'
+
+content:
+  sources:
+    - url: ./
+      branches: HEAD
+      start_path: docs
+      worktrees: true
+    - url: ../connectome-fs
+      branches: HEAD
+      start_path: docs
+      worktrees: true
+
+ui:
+  bundle:
+    url: https://github.com/antora-supplemental/valentus-theme/releases/download/v2/ui-bundle.zip
+    snapshot: true
+  supplemental_files: ./supplemental-ui
+
+output:
+  dir: ./build/site
+
+asciidoc:
+  extensions:
+    - asciidoctor-kroki
+    - '@antora-supplemental/page-context'
+  attributes:
+    stem: latexmath
+    kroki-server-url: https://kroki.io
+    kroki-fetch-diagram: true
+    page-context-active: ''
+    experimental: ''
+    idprefix: ''
+    idseparator: '-'
+    page-pagination: ''

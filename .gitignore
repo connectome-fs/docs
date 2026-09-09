@@ -1,0 +1,26 @@
+# Allow-list
+*
+!.gitignore
+!LICENSE
+!README.adoc
+!AGENTS.md
+!CHANGELOG.adoc
+!changelog-details/
+!changelog-details/**
+!package.json
+!pnpm-lock.yaml
+!antora-playbook.yml
+!antora-playbook-local.yml
+!antora-playbook.testing.yml
+!docs/
+!docs/**
+!supplemental-ui/
+!supplemental-ui/**
+!.github/
+!.github/**
+
+node_modules/
+build/
+.cache/
+**/.DS_Store
+**/Thumbs.db
