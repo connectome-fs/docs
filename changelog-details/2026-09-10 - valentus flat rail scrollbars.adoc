@@ -1,0 +1,6 @@
+= Valentus 2.0.26 flat dark rail + hidden nav scrollbars
+:description: Pick up Valentus dark side-panel wash as opt-in and hide tree-nav scrollbar chrome.
+
+Valentus **2.0.25** makes the elevated dark nav/TOC wash opt-in (`html.adt-side-panels`), matching light mode’s flat default.
+
+Valentus **2.0.26** hides tree-nav scrollbar chrome; horizontal overflow still scrolls via wheel/trackpad, with edge fades as the affordance.

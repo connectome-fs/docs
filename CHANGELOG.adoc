@@ -1,5 +1,11 @@
 = Changelog
 
+== 2026-09-10 — Valentus 2.0.26 flat dark rail + hidden nav scrollbars
+
+xref:changelog-details/2026-09-10 - valentus flat rail scrollbars.adoc[Details]
+
+* Rebuild against Valentus rolling `v2` after **2.0.25** / **2.0.26**: dark side-rail wash off by default; tree-nav scrollbars hidden while edge fades remain
+
 == 2026-09-10 — Nav panel width + Valentus 2.0.24
 
 xref:changelog-details/2026-09-10 - nav panel width containment.adoc[Details]
