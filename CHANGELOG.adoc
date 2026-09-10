@@ -1,5 +1,12 @@
 = Changelog
 
+== 2026-09-09 — page-context 0.3.2 / Valentus 2.0.21 table + panel + nav scroll
+
+xref:changelog-details/2026-09-09 - page-context table panel polish.adoc[Details]
+
+* Lockfile picks up `@antora-supplemental/page-context` **0.3.2** (independent metadata table: no zebra, muted type, thin dividers, light/dark surface)
+* Rebuild against Valentus rolling `v2` after **2.0.21** (content-sized side-rail panels, page-context bridge, scroll-aware nav edge fades)
+
 == 2026-09-09 — Pick up Valentus / site-nav-tree / page-context UX
 
 xref:changelog-details/2026-09-09 - pick up theme extension ux.adoc[Details]
