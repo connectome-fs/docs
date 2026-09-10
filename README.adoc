@@ -36,6 +36,7 @@ endif::[]
 
 This repository owns the playbook, supplemental UI, search, and GitHub Pages deployment for the org docs hub.
 Product documentation source remains beside the code in `connectome-fs` under `docs/`.
+The marketing website (`connectome-fs.github.io`) links here; it does not embed Antora.
 
 == Development
 
@@ -49,3 +50,9 @@ See link:CHANGELOG.adoc[CHANGELOG.adoc] and link:changelog-details/[changelog-de
 == License
 
 See link:LICENSE[LICENSE].
+
+== Contact
+
+Ryan Johnson — https://twitter.com/amdphreak[@amdphreak]
+
+Org: https://github.com/connectome-fs
