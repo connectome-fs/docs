@@ -14,6 +14,11 @@ Last author:: {page-last-author}
 Last updated:: {page-last-edited}
 endif::[]
 
+== 2026-09-09 — antora-search-chat 0.1.4
+
+* Pin `@antora-supplemental/antora-search-chat` to `v0.1.4` (hierarchical scope tree without *Component* kind labels on the closed face)
+* Tag the hub with GitHub topic `uses-antora-search-chat` for extension consumer discovery
+
 == 2026-09-09 — Nav typology icons + expand fix
 
 xref:changelog-details/2026-09-09 - nav typology and expand fix.adoc[Details]
