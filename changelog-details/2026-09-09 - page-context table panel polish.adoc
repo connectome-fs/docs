@@ -1,13 +1,13 @@
-= Pick up page-context 0.3.2 / Valentus 2.0.20 table + panel polish
-:navtitle: page-context 0.3.2 Valentus 2.0.20
-:description: Docs hub rebuild to pick up independent page-context table chrome and content-sized side panels.
+= Pick up page-context 0.3.2 / Valentus 2.0.21 table + panel + nav scroll
+:navtitle: page-context 0.3.2 Valentus 2.0.21
+:description: Docs hub rebuild for page-context table chrome, content-sized side panels, and scroll-aware nav edge fades.
 
 == Summary
 
 Rebuilds the Antora hub so it fetches:
 
 * `@antora-supplemental/page-context` **0.3.2** (no zebra; muted smaller type; thin outer + inner borders; light/dark surface)
-* Valentus rolling `v2` after **2.0.20** (content-sized nav/TOC panel wash; page-context token bridge)
+* Valentus rolling `v2` after **2.0.21** (content-sized nav/TOC panel wash; page-context token bridge; horizontal nav scroll with left/right edge fades)
 
 == Steps
 
