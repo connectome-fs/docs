@@ -3,7 +3,7 @@
 == 2026-09-09 — antora-search-chat 0.1.4
 
 * Pin `@antora-supplemental/antora-search-chat` to `v0.1.4` (hierarchical scope tree without *Component* kind labels on the closed face)
-* Tag the hub with GitHub topic `uses-antora-search-chat` for extension consumer discovery
+* Tag the hub with GitHub topic `antora-search-chat` for extension consumer discovery
 
 == 2026-09-09 — page-context 0.3.2 / Valentus 2.0.21 table + panel + nav scroll
 
