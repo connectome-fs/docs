@@ -35,6 +35,9 @@ antora:
       mode: alias
     - '@antora-supplemental/build-stack'
     - '@antora-supplemental/page-edit'
+    - require: '@antora-supplemental/page-context/antora'
+      component: home
+      path: keywords
 
 content:
   sources:
@@ -65,6 +68,7 @@ asciidoc:
     kroki-server-url: https://kroki.io
     kroki-fetch-diagram: true
     page-context-active: ''
+    page-context-keyword-base: '/home/keywords'
     experimental: ''
     idprefix: ''
     idseparator: '-'
