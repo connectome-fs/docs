@@ -1,0 +1,4 @@
+= Valentus 2.0.30 top-level nav-list inset
+:description: Pick up Valentus drop of redundant root .nav-list left margin.
+
+Valentus **2.0.30** zeros `margin-left` on `nav.nav-menu > .nav-list` so the tree uses only the rail padding for outer inset. Nested list margins stay for depth indentation.

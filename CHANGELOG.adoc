@@ -1,5 +1,11 @@
 = Changelog
 
+== 2026-09-10 — Valentus 2.0.30 top-level nav-list inset
+
+xref:changelog-details/2026-09-10 - valentus top-level nav-list margin.adoc[Details]
+
+* Rebuild against Valentus rolling `v2` after **2.0.30**: drop redundant left margin on the root tree list (rail padding already insets)
+
 == 2026-09-10 — Copyable breadcrumb path (Valentus 2.0.28)
 
 xref:changelog-details/2026-09-10 - copyable breadcrumb path.adoc[Details]
