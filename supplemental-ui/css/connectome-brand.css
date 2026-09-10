@@ -115,8 +115,8 @@ html.dark-theme .toc-menu a {
   color: var(--adt-accent);
 }
 
-html.dark-theme .nav-container,
-html.dark-theme .nav,
+/* Nav column stays transparent so Valentus paints only nav.nav-menu (side-panel wash).
+   Painting .nav-container/.nav here stacked a second full-height wash behind the tree. */
 html.dark-theme .toc-menu,
 html.dark-theme .doc pre,
 html.dark-theme .doc table {
@@ -150,7 +150,6 @@ html.dark-theme .doc code {
 
 html.dark-theme .doc hr,
 html.dark-theme .doc table,
-html.dark-theme .nav-container,
 html.dark-theme .toc-menu {
   border-color: var(--cfs-doc-border);
 }

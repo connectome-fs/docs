@@ -1,0 +1,6 @@
+= Nav panel width + Valentus 2.0.24
+:description: Contain the elevated tree-nav wash inside the fixed sidebar column and pick up Valentus horizontal scroll containment.
+
+Hub brand CSS was painting a full-height wash on `.nav-container` / `.nav` while Valentus painted a second elevated surface on `nav.nav-menu`. That stacked look made the tree look like two nested containers.
+
+Valentus **2.0.24** also stops the menu panel from shrink-to-fitting past `--adt-nav-width`, so long nowrap labels scroll inside the column and edge fades can engage.

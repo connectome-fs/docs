@@ -4,7 +4,7 @@
 :page-usage-context: Public changelog index
 :page-orig-author: Ryan Johnson
 :page-last-author: Cursor agent on behalf of Ryan Johnson
-:page-last-edited: 2026-09-09
+:page-last-edited: 2026-09-10
 
 ifndef::page-context-active[]
 Audience:: {page-audience}
@@ -13,6 +13,13 @@ Original author:: {page-orig-author}
 Last author:: {page-last-author}
 Last updated:: {page-last-edited}
 endif::[]
+
+== 2026-09-10 — Nav panel width + Valentus 2.0.24
+
+xref:changelog-details/2026-09-10 - nav panel width containment.adoc[Details]
+
+* Stop painting a second full-height wash on `.nav-container` / `.nav` (Valentus owns the elevated `nav.nav-menu` panel)
+* Rebuild against Valentus rolling `v2` after **2.0.24** (tree panel stays inside `--adt-nav-width` so h-scroll + edge fades work)
 
 == 2026-09-10 — Hub home metadata chrome
 

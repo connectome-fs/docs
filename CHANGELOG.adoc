@@ -1,5 +1,12 @@
 = Changelog
 
+== 2026-09-10 — Nav panel width + Valentus 2.0.24
+
+xref:changelog-details/2026-09-10 - nav panel width containment.adoc[Details]
+
+* Stop painting a second full-height wash on `.nav-container` / `.nav` (Valentus owns the elevated `nav.nav-menu` panel)
+* Rebuild against Valentus rolling `v2` after **2.0.24** (tree panel stays inside `--adt-nav-width` so h-scroll + edge fades work)
+
 == 2026-09-09 — antora-search-chat 0.1.4
 
 * Pin `@antora-supplemental/antora-search-chat` to `v0.1.4` (hierarchical scope tree without *Component* kind labels on the closed face)
