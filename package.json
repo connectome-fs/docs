@@ -8,7 +8,7 @@
     "build:testing": "antora antora-playbook.testing.yml"
   },
   "dependencies": {
-    "@antora-supplemental/page-context": "github:antora-supplemental/page-context#v0.6.1",
+    "@antora-supplemental/page-context": "github:antora-supplemental/page-context#v0.6.3",
     "@antora/lunr-extension": "^1.0.0-alpha.13",
     "asciidoctor-kroki": "^0.18.1"
   },

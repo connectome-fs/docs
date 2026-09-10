@@ -1,5 +1,11 @@
 = Changelog
 
+== 2026-09-10 — page-context 0.6.3 author chrome
+
+xref:changelog-details/2026-09-10 - page-context author via chrome.adoc[Details]
+
+* Lockfile picks up `@antora-supplemental/page-context` **0.6.3** (name → circular avatar → `via {product}`; meta stays plain human)
+
 == 2026-09-10 — Valentus 2.0.30 top-level nav-list inset
 
 xref:changelog-details/2026-09-10 - valentus top-level nav-list margin.adoc[Details]
