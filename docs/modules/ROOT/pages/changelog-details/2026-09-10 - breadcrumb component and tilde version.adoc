@@ -1,0 +1,9 @@
+= Breadcrumb component + tilde version (Valentus 2.0.27)
+:description: Rebuild against Valentus rolling v2 after mast keeps component with a conjoined ~ version menu.
+:page-audience: Visitors and maintainers tracking hub chrome
+:page-usage-context: Hub changelog detail
+:page-orig-author: Ryan Johnson
+:page-last-author: Cursor agent on behalf of Ryan Johnson
+:page-last-edited: 2026-09-10
+
+Valentus **2.0.27** keeps the mast **component** kicker (useful on mobile) and places a literal `~` version menu immediately to its right. Under site-nav-tree, only a duplicate **trail** component-root crumb is suppressed — not the component control itself.
