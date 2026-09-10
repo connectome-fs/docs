@@ -1,0 +1,9 @@
+﻿= Copyable breadcrumb path (Valentus 2.0.28)
+:description: Rebuild against Valentus rolling v2 after mast uses real / characters for copy-paste paths.
+:page-audience: Visitors and maintainers tracking hub chrome
+:page-usage-context: Hub changelog detail
+:page-orig-author: Ryan Johnson
+:page-last-author: Cursor agent on behalf of Ryan Johnson
+:page-last-edited: 2026-09-10
+
+Valentus **2.0.28** turns the site-home control and trail separators into real `/` characters (no home chip) so a drag-select copies a pasteable path such as `/ Home ~ / Where docs live`.
