@@ -14,6 +14,13 @@ Last author:: {page-last-author}
 Last updated:: {page-last-edited}
 endif::[]
 
+== 2026-09-10 — Hub home metadata chrome
+
+xref:changelog-details/2026-09-10 - hub home metadata chrome.adoc[Details]
+
+* Hub portal home no longer shows Audience / Usage context; authorship stays at the end
+* Aligns with `@antora-supplemental/page-context` 0.5 (`page-context-surface: component-home`)
+
 == 2026-09-09 — antora-search-chat 0.1.4
 
 * Pin `@antora-supplemental/antora-search-chat` to `v0.1.4` (hierarchical scope tree without *Component* kind labels on the closed face)
