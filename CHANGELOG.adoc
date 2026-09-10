@@ -1,5 +1,12 @@
 = Changelog
 
+== 2026-09-09 — Pick up Valentus / site-nav-tree / page-context UX
+
+xref:changelog-details/2026-09-09 - pick up theme extension ux.adoc[Details]
+
+* Companion `site-nav-tree-current.js` refreshed from `@antora-supplemental/site-nav-tree` 0.3 (session expand retention)
+* Docs hub continues to pin Valentus rolling `v2` UI bundle and extension `#main` — rebuild after theme release **2.0.19** and extension pushes
+
 == 2026-09-09 — Nav typology icons + expand fix
 
 xref:changelog-details/2026-09-09 - nav typology and expand fix.adoc[Details]

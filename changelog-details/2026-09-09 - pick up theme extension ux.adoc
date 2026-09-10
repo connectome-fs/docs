@@ -1,0 +1,18 @@
+= Pick up Valentus / site-nav-tree / page-context UX
+:description: Connectome docs hub consumes canonical theme and extension fixes (no site-only CSS reimplementation).
+
+== Summary
+
+UX fixes for mast, nav expand state, highlight clip, page-context metadata table, and muted in-doc TOC live in:
+
+* `antora-supplemental/valentus-theme` **2.0.19** (rolling `v2` bundle after release)
+* `antora-supplemental/site-nav-tree` **0.3.0** (`#main`)
+* `antora-supplemental/page-context` **0.3.0** (`#main`)
+
+This hub only refreshes the copied companion `site-nav-tree-current.js` and redeploys — it does **not** re-implement those styles locally.
+
+== How to pick up
+
+. Push/release the packages above.
+. `pnpm install` (or lock refresh) so `#main` tarballs update.
+. Rebuild/deploy the docs hub so Antora fetches `…/valentus-theme/releases/download/v2/ui-bundle.zip` after the rolling `v2` asset moves.
