@@ -1,5 +1,11 @@
 = Changelog
 
+== 2026-09-10 — page-context 0.6.6 author spacing
+
+xref:changelog-details/2026-09-10 - page-context author spacing.adoc[Details]
+
+* Lockfile picks up `@antora-supplemental/page-context` **0.6.6** (flex gap between name, avatar, and `via \{product}` in the byline and footer)
+
 == 2026-09-10 — page-context 0.6.3 author chrome
 
 xref:changelog-details/2026-09-10 - page-context author via chrome.adoc[Details]

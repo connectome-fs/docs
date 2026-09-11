@@ -1,0 +1,20 @@
+= Pick up page-context 0.6.6 author spacing
+:navtitle: page-context 0.6.6
+:description: Docs hub rebuild so name, avatar, and via Agent stay separated.
+:page-audience: Maintainers tracking hub dependency pins
+:page-usage-context: Changelog detail for the page-context 0.6.5 pin
+:page-orig-author: Ryan Johnson
+:page-last-author: Cursor agent on behalf of Ryan Johnson
+:page-last-edited: 2026-09-10
+
+== Summary
+
+Rebuilds the Antora hub so it fetches `@antora-supplemental/page-context` **0.6.6**:
+
+* Lead byline and footer author cells use the same author cluster
+* Flex `gap` separates the linked name, circular avatar, and plain `via \{product}` (HTML spaces between those pieces collapse)
+
+== Steps
+
+. Pin `package.json` / lockfile to `github:antora-supplemental/page-context#v0.6.6`.
+. Deploy/rebuild so Antora re-fetches the extension.
