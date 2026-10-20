@@ -7,7 +7,7 @@
     "build:testing": "antora antora-playbook.testing.yml"
   },
   "devDependencies": {
-    "@antora-supplemental/facto-stack": "github:antora-supplemental/facto-stack#v0.2.43",
+    "@antora-supplemental/facto-stack": "github:antora-supplemental/facto-stack#v0.2.45",
     "@antora/cli": "^3.1.14",
     "@antora/site-generator": "^3.1.14",
     "antora": "^3.1.14"
