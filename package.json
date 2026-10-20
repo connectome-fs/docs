@@ -1,7 +1,7 @@
 {
   "name": "connectome-fs-docs",
   "private": true,
-  "packageManager": "pnpm@9.15.4",
+  "packageManager": "pnpm@10.28.1",
   "scripts": {
     "build": "antora --fetch antora-playbook.yml",
     "build:testing": "antora antora-playbook.testing.yml"

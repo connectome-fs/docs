@@ -9,6 +9,7 @@
 !changelog-details/**
 !package.json
 !pnpm-lock.yaml
+!pnpm-workspace.yaml
 !antora-playbook.yml
 !antora-playbook-local.yml
 !antora-playbook.testing.yml
