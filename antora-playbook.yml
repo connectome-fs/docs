@@ -17,27 +17,25 @@ urls:
 
 antora:
   extensions:
-    - require: '@antora/lunr-extension'
-      index_latest_only: true
-      index_by_heading: true
-      snippet_length: 200
-    - require: '@antora-supplemental/antora-search-chat'
-    - require: '@antora-supplemental/site-nav-tree'
-      include:
-        - home
-        - connectome-fs
-      order:
-        - home
-        - connectome-fs
-    - require: '@antora-supplemental/nav-typology'
-    - require: '@antora-supplemental/nav-typology-diataxis'
-    - require: '@antora-supplemental/unversioned-component-urls'
-      mode: alias
-    - '@antora-supplemental/build-stack'
-    - '@antora-supplemental/page-edit'
-    - require: '@antora-supplemental/page-context/antora'
-      component: home
-      path: keywords
+    - require: '@antora-supplemental/facto-stack'
+      profile: hub
+      lunr:
+        index_latest_only: true
+        index_by_heading: true
+        snippet_length: 200
+      siteNavTree:
+        enabled: true
+        include:
+          - home
+          - connectome-fs
+        order:
+          - home
+          - connectome-fs
+      unversionedComponentUrls:
+        mode: alias
+      pageContextAntora:
+        component: home
+        path: keywords
 
 content:
   sources:
